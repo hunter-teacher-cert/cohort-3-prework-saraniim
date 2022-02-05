@@ -29,7 +29,7 @@
 
       //Exercise 3 Part 6 - Elapsed time
       // original time was 12:29:24
-        System.out.print("Elapsed time: ");
+        System.out.print("Elapsed time in minutes: ");
         System.out.println((hour * 60 + minute) - (12 * 60 + 29) );  
 
 
