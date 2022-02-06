@@ -5,17 +5,24 @@
         System.out.println(firstLine);
 
       // Exercise 3 part #2
+      //    current hour
         int curhour;
         curhour = 12;
+        // current minute
         int curminute;
         curminute = 59;
+        //current seconds
         int cursecond;
         cursecond = 24;
 
+        //  seconds per hour
         int hoursec;
         hoursec = 360;
+        // minutes per hour
         int hourmin;
         hourmin = 60;
+
+        //seconds per minute
         int minsec;
         minsec = 60;
          
