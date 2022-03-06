@@ -11,7 +11,7 @@ public class Celsius {
         double cel = in.nextDouble();
         
         // Convert Celsius to Fahrenheit
-        double F = cel * (9.0 / 5.0) + 32;
+        final double F = cel * (9.0 / 5) + 32;
         
         // Print result
         System.out.println(cel + " Celsius is " + F +" degrees Fahrenheit.");

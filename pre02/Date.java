@@ -2,8 +2,8 @@
 
  class Date{
   public static void main(String[] args) {
-        String firstLine = "Date Check!";
-        System.out.println(firstLine);
+
+        System.out.println("Date check!");
 
         String day = "Saturday";
         String month = "January";
