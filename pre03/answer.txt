@@ -1,0 +1,10 @@
+1.   baffle prints wug
+     ping prints .
+
+2. First time ping is invoked stack is 
+    ping
+    baffle
+    zoop
+    main
+
+3. If baffle is after ping then there's an error because baffle calls ping which then calls baffle and it goes into infinity as one keeps calling the other. 
