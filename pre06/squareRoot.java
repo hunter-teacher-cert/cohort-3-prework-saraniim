@@ -1,33 +1,32 @@
-public class squareRoot{
-  public static void main(String args[]){
+import java.util.Scanner;
 
-    }
-/**public static double power(double x, int n) {
-    if (n == 0)
-        return 1;
-    if (n == 1)
-        return x;
-    else
-        return x * (power(x, n-1));**/
+public class squareRoot {
+	/** Main Method */
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in); 
+    // Create a Scanner
 
-    
-public static double power(double x, int n) {
-  if (n == 0) return 1;
-  if (n == 1) return x;
-  if (n == 2) return x * x;
-  if (n % 2 == 0) return power(power(x, n / 2), 2);
- return x * (power(x, n - 1));
-}
+		// Prompt user to enter a number
+		System.out.print("Enter a number: ");
+		double number = input.nextDouble();
 
+		// Display the square root
+		System.out.println(
+			"The approximate square root of " + number + " is: " + sqrt(number));
+	}
+	
+	/** Method squrt approximates the square root of n */
+	public static double sqrt(double n) {
+		double guess = 1;	// Initial guess to positive value
+		double nextGuess = (guess + n / guess) / 2; 
 
- 
-
-
-  
-}
-        return result;
-       System.out.println(result); 
-
-  
-}
+		// If the difference between nextGuess and lastGuess is less than 0.0001,
+		// return nextGuess as the approximated square root of n.
+		while (nextGuess - guess > 0.0001) {
+			guess = nextGuess;
+			nextGuess = (guess + n / guess) / 2;
+		}
+		guess = nextGuess;
+		return nextGuess = (guess + n / guess) / 2;
+	}
 }
